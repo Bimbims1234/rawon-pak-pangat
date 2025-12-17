@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawon Pak Pangat | Cita Rasa Legendaris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset & Global Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcfcfc;
+        }
+
+        /* Variables */
+        :root {
+            --primary-color: #b18c02; /* Gold/Mustard */
+            --dark-color: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://lh3.googleusercontent.com/rd-gg-dl/ABS2GSnvS8nYMq2WSmgPYmv80c9_6QnbLw7l6BWrnl0hKHqRfbHQvGSGYxmO1dWurErJoSG9u3VD0WTjvtMgHkr-4EWdvSievl5xu5hsqS3-pbnDAIpeb7KrtTxJ9jeISMypMEserI66CtmP00OnA7gPy6GdhpZWWnrGNo7rFvdn_hd_PpaA2RSumuEGdCzicVM76srq1VIMU15mRldKVuEPASqdMlK-d0xDhasYXPaENi2CEw-6oJGHuCuYepDJWrHvgI_GOoJIhu62PSu2qblvhLAPeLsZ5I4t_hzXmYKJa_rIsF9FPltBndGayVLayMcjc27hEW1T6PmArne91iR43ofK8bAP6tygYN5_SS-WgEh9vYZmHs17Z5Kf9POPHMTG8xLgfDDKpH10ZxBrHcmeNbIObv89omIlCw_1Z2Sqw_7_AXlnbd2G7YD_x4_HSwPxqLvpiP87JQLniPIvoWwzvVZljoc0t7XGHrZVZXQOW5FBTT982zMQxBxzR-eCi6KsPrVaTtRb8Iwpr9YToS_Hx192RrtKosg2y2WgO1BEYxLi4JxShHzHwcJhxCgeAtJFaw8qaCKfZEJ7KZY18G4DzklF39e0pfcdUKs5_i8TOXtD_NN6UJi0hLBCEufwA4W02lYjzfkhsY6Cyjy_HmU1_jsPspJxHVj2PeEZZv5ojxSzxSDizgXWhpNdjYxcK_Bsxk_SWi5Gh5DXmju0lzlg66Ix5x4NGcymQI6peMn5tP_diLVv50RZdv4b-66FR8iHLRB_KBPBlNbGd_tpLA7T1j9caW4_K8BhvIPjTkUa_pS5Dt71_vpczNNiZpduS5xHqdhasmHDIXyIhMpWNN-R7JC4-JRzOANVwF9FaCPE_onscFl5I0VBpzjMQLFMvuKzJQONB9y5jzA-_NgL07HK6n3mkagwM7eHPS3FULfRlYlbtb3B4Ty3ERpbZ_uV5j6Sz0iutWLvexFZ7q82rxFx03EmIRWcFR8j3IZMBbX0y1iEFGxi-beIJbYNpIG1PlWbLrFjtgJGev4tRtpATejJCnpBj_rnuiFPo6moLMjbF901amFn-oaZJAwUAWxyru4wxqLTG1tRHn0EA9yO5z0w-AAduc9WWEOm1t--mw2Kv05csE0XfP-wRDgiJTShr3sZtUb3rs9kYgD_F5A77l1h2BezFWeBV_obXYG0_Y4ewC479gTJ_Wfb=s1024-rj'); /* Gambar representatif makanan */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #8e7102;
+        }
+
+        /* Menu Section */
+        .section-padding {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .menu-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-img {
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #888;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 40px 10% 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { flex-direction: column; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RAWON PAK PANGAT</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="https://wa.me/628123456789" class="btn" style="padding: 5px 15px;">Pesan</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Legenda Rawon Surabaya</h1>
+        <p>Nikmati perpaduan kuah hitam kental yang gurih dengan daging empuk pilihan. Resep rahasia sejak puluhan tahun yang selalu dirindukan.</p>
+        <a href="#menu" class="btn">Lihat Menu Utama</a>
+    </section>
+
+    <section class="section-padding" id="menu">
+        <h2 class="section-title">Menu Spesialis</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-img" style="background: url('https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8226f7ff-6515-446d-860b-0bfb602ad76f_Go-Biz_20210929_173627.jpeg') center/cover;"></div>
+                <div class="menu-info">
+                    <h3>Rawon Krengsengan</h3>
+                    <p>Menu paling favorit! Perpaduan rawon dengan bumbu krengsengan daging yang manis pedas.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-img" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDVA9CaCHb2v2gtWpPOjtTOLMIJ68nAm-6w&s') center/cover;"></div>
+                <div class="menu-info">
+                    <h3>Rawon Empal</h3>
+                    <p>Potongan daging empal besar yang digoreng sempurna, disajikan dengan kuah rawon hangat.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-img" style="background: url('https://rentalmotorsurabaya.id/wp-content/uploads/2020/10/rental-motor-surabaya-wisata-kuliner-surabaya-rawon-pak-pangat.jpg') center/cover;"></div>
+                <div class="menu-info">
+                    <h3>Rawon Campur</h3>
+                    <p>Isian lengkap mulai dari tauge pendek, sambal khas, hingga kerupuk udang yang renyah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="lokasi" style="background: #f0f0f0;">
+        <h2 class="section-title">Kunjungi Kami</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Cabang Wonokromo (DTC Surabaya)</p>
+        <p><i class="fas fa-map-marker-alt"></i> Cabang Ketintang, Surabaya</p>
+        <p style="margin-top: 20px;"><strong>Buka Setiap Hari:</strong> 06.00 - 21.00 WIB</p>
+    </section>
+
+    <footer>
+        <div class="logo">RAWON PAK PANGAT</div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2025 Rawon Pak Pangat. Created for Culinary Excellence.</p>
+    </footer>
+
+</body>
+</html>
